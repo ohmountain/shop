@@ -35,6 +35,31 @@ class App extends Component {
         this.setState({ activeMenu: key});
     }
 
+    componentDidMount() {
+        var docElm = document.documentElement;
+
+
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        }
+
+        //FireFox
+        else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        }
+
+        //Chrome等
+        else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        }
+
+        //IE11
+        else if (docElm.msRequestFullscreen) {
+            docElm.msRequestFullscreen();
+        }
+
+    }
+
     render() {
         return (<BrowserRouter>
                 <div className="App">
