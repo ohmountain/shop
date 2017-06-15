@@ -37,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     transition-duration: 0.25s;
+    text-decoration: none;
 }
 
 
