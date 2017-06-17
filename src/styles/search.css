@@ -1,0 +1,29 @@
+.search-input-wrapper {
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(254, 47, 75, 1);
+}
+
+.search-input {
+    height: 32px;
+    width: 90%;
+    margin: 8px auto;
+    padding: 0 12px;
+    line-height: 32px;
+    background-color: #FFF;
+    border-radius: 16px;
+}
+
+.search-icon {
+    font-size: 12px;
+    color: #9F9F9F;
+}
+
+.search-default-text {
+    margin-left: 12px;
+    font-size: 12px;
+}

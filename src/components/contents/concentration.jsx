@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Crousel from './concentration/crousel';
+import Search from './concentration/search';
 
 class Concentration extends Component {
 
@@ -26,12 +27,17 @@ class Concentration extends Component {
                 id: 4,
                 url: "http://localhost:8080/#/button",
                 legend: '高冷女神'
-            }]
+            }],
+            deltaY: 0
         };
     }
 
     render() {
-        return <Crousel data={ this.state.carousel } />;
+        return <div
+        style={{ minHeight: '200%' }}>
+            <Search deltaY={ this.state.deltaY } />
+            <Crousel data={ this.state.carousel } />
+        </div>;
     }
 }
 
