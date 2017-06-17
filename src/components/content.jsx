@@ -9,6 +9,8 @@ import {
     User
 } from './contents';
 
+import SearchPage from './contents/concentration/search/page';
+
 class Content extends Component {
     render() {
         return <div className='content'>
@@ -16,6 +18,7 @@ class Content extends Component {
             <Route path="/brand" component={ Brand }></Route>
             <Route path="/basket" component={ Basket}></Route>
             <Route path="/user" component={ User }></Route>
+            <Route path="/search/page" component={ SearchPage }></Route>
             </div>
     }
 }

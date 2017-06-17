@@ -6,6 +6,9 @@
     left: 0;
     z-index: 9;
     background-color: rgba(254, 47, 75, 1);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #696969;
 }
 
 .search-input {
@@ -16,6 +19,7 @@
     line-height: 32px;
     background-color: #FFF;
     border-radius: 16px;
+    vertical-align: top;
 }
 
 .search-icon {
@@ -24,6 +28,12 @@
 }
 
 .search-default-text {
-    margin-left: 12px;
     font-size: 12px;
+    width: 90%;
+    margin-left: 16px;
+    border: none;
+    outline: none;
+    height: 24px;
+    box-sizing:content-box;
+    color: #696969;
 }
